@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Agregar"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_test"
+        android:title="Probar (60s)"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/action_notify_now"
+        android:title="Notificar ahora (inmediata)"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_diag"
+        android:title="Diagnóstico de notificaciones"
+        app:showAsAction="never"/>
+</menu>

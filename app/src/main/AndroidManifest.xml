@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sv.edu.catolica.dc">
+
+    <!-- Red / HTTP -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Notificaciones (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Reprogramar recordatorios tras reinicio -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Exact alarms (Android 12+) -->
+    <uses-permission android:name="android.permission/SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:localeConfig="@xml/locale_config"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dc"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- Splash / entrada: MainActivity como LAUNCHER -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Home principal -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- Biblioteca de rutinas -->
+        <activity
+            android:name=".RoutinesActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- Editor de rutina -->
+        <activity
+            android:name=".RoutineEditorActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Dc"
+            android:parentActivityName=".RoutinesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RoutinesActivity" />
+        </activity>
+
+        <!-- Selector de ejercicios -->
+        <activity
+            android:name=".ExerciseSelectorActivity"
+            android:exported="false"
+            android:parentActivityName=".RoutineEditorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RoutineEditorActivity" />
+        </activity>
+
+        <!-- Detalle de rutina -->
+        <activity
+            android:name=".DetalleRutina"
+            android:exported="false"
+            android:label="@string/detail_title"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- Sesión en curso -->
+        <activity
+            android:name=".SesionCurso"
+            android:exported="false"
+            android:theme="@style/Theme.Dc"
+            android:parentActivityName=".DetalleRutina">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DetalleRutina" />
+        </activity>
+
+        <!-- Descanso -->
+        <activity
+            android:name=".RestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Dc"
+            android:parentActivityName=".SesionCurso">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SesionCurso" />
+        </activity>
+
+        <!-- Estadísticas -->
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- Historial -->
+        <activity
+            android:name=".SessionHistoryActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- Recordatorios -->
+        <activity
+            android:name=".RemindersActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- Pantalla de pruebas -->
+        <activity
+            android:name=".DebugAlarmTestActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+
+        <!-- Panel de administrador -->
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- Receiver que lanza la notificación -->
+        <receiver
+            android:name=".ReminderReceiver"
+            android:exported="false" />
+
+        <!-- Receiver para reprogramar alarmas tras reinicio/cambio de hora/etc -->
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

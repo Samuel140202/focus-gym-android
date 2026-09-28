@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="?attr/colorOutline">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Descripción -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/descripci_n">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Hora + switch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="06:00 AM"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingVertical="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <CheckBox android:id="@+id/d0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="L"/>
+            <CheckBox android:id="@+id/d1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="M"/>
+            <CheckBox android:id="@+id/d2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X"/> <!-- Miércoles -->
+            <CheckBox android:id="@+id/d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="J"/>
+            <CheckBox android:id="@+id/d4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V"/>
+            <CheckBox android:id="@+id/d5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S"/>
+            <CheckBox android:id="@+id/d6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

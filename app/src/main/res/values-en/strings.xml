@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <string name="app_name">FOCUS</string>
+
+    <!-- Buttons / Actions -->
+    <string name="btn_add">Add</string>
+    <string name="btn_selected">Selected</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="confirm_selection">Confirm selection</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_drag">Reorder</string>
+    <string name="cd_edit">Edit exercise</string>
+    <string name="cd_delete">Delete exercise</string>
+
+    <!-- RestActivity -->
+    <string name="rest_title">Rest</string>
+    <string name="rest_default_time">00:45</string>
+    <string name="rest_hint">Get ready for the next exercise</string>
+    <string name="rest_skip">Skip</string>
+    <string name="rest_restart">Restart</string>
+
+    <!-- Routine Editor -->
+    <string name="title_new_routine">New routine</string>
+    <string name="title_edit_routine">Edit routine</string>
+    <string name="hint_title">Routine title</string>
+    <string name="hint_level">Level</string>
+    <string name="hint_description">Description (optional)</string>
+    <string name="label_exercises">Exercises</string>
+    <string name="btn_add_exercise">Add exercise</string>
+
+    <!-- Levels -->
+    <string-array name="levels_array">
+        <item>Basic</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <!-- Dialogs / Validation -->
+    <string name="hint_series">Sets (≥1)</string>
+    <string name="hint_reps">Reps (≥1)</string>
+    <string name="hint_rest_seconds">Rest (seconds ≥0)</string>
+    <string name="msg_discard_changes">Discard changes?</string>
+    <string name="msg_invalid_title">Title is required.</string>
+    <string name="msg_invalid_exercises">Add at least one exercise.</string>
+    <string name="msg_invalid_fields">Check sets/reps/rest.</string>
+
+    <!-- Library / Listing -->
+    <string name="library_title">Routine Library</string>
+
+    <!-- Exercise Selector -->
+    <string name="selector_title">Select exercises</string>
+    <string name="selector_filter_group">Group</string>
+    <string name="selector_filter_level">Level</string>
+    <string name="selector_all">All</string>
+
+    <!-- Session History -->
+    <string name="title_history">Session history</string>
+    <string name="action_filter">Filter</string>
+    <string name="section_this_week">This week</string>
+    <string name="section_prev_week">Last week</string>
+    <string name="section_last_month">Last month</string>
+    <string name="history_empty">No sessions recorded yet</string>
+
+    <!-- Generic history labels -->
+    <string name="history_duration">Duration</string>
+    <string name="history_status">Status</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_in_progress">In progress</string>
+
+    <!-- History adapter formats -->
+    <string name="history_duration_fmt">Duration: %1$d min</string>
+    <!-- EN places "level" after the value -->
+    <string name="history_title_level_fmt">%1$s · %2$s level</string>
+    <string name="history_status_completed">Status: Completed</string>
+    <string name="history_status_in_progress">Status: In progress</string>
+    <string name="history_percent_fmt">%1$d%%</string>
+
+    <!-- Other (existing) -->
+    <string name="welcome_fmt">Welcome %1$s (%2$s)</string>
+    <string name="bienvenido">Welcome</string>
+    <string name="usuariolg">User</string>
+    <string name="contrasena">Password</string>
+    <string name="rutina_full_body">Full Body Routine</string>
+    <string name="grupo">Group</string>
+    <string name="rutina_de_hoy_full_body">Today’s routine: Full Body</string>
+    <string name="ver_detalles">Choose routine</string>
+    <string name="ver_detalles_de_la_rutina">View routine details</string>
+    <string name="empezar_ahora">Start now</string>
+    <string name="empezar_rutina_ahora">Start routine now</string>
+    <string name="biblioteca">Library</string>
+    <string name="estad_sticas">Statistics</string>
+    <string name="recordatorios">Reminders</string>
+    <string name="accesos_r_pidos">Quick actions</string>
+    <string name="pr_ximas_sesiones">Upcoming sessions</string>
+    <string name="cerrar_sesi_n">Sign out</string>
+    <string name="ingresar">SIGN IN</string>
+    <string name="inicio_de_sesion">Sign in</string>
+    <string name="guardar_cambios">Save changes</string>
+    <string name="rutina_full_body1">Routine: Full Body</string>
+    <string name="ejercicio_lagartijas">Exercise: Push-ups</string>
+    <string name="terminar_sesi_n">Finish session</string>
+    <string name="serie_1_4_12_reps">Set 1/4 • 12 reps</string>
+    <string name="sesiones">Sessions</string>
+    <string name="minutos">Minutes</string>
+    <string name="racha">Streak</string>
+    <string name="press_de_pecho_con_mancuernas">Dumbbell bench press</string>
+    <string name="full_body_intermedio">Full Body · Intermediate</string>
+    <string name="duraci_n_45_min">Duration: 45 min</string>
+    <string name="estado_completado">Status: Completed</string>
+    <string name="full_body_nivel_intermedio">FULL BODY — Intermediate level.</string>
+    <string name="duraci_n_45_min_nivel_intermedio">Duration: 45 min · Level: Intermediate</string>
+    <string name="parte_superior_del_cuerpo">Upper body</string>
+    <string name="ma_ana_40_min_intermedio">Tomorrow · 40 min · Intermediate</string>
+    <string name="pecho_intermedio">Chest · Intermediate</string>
+    <string name="descripci_n">Description…</string>
+    <string name="comenzar">Start</string>
+
+    <!-- Session -->
+    <string name="no_exercises_selected">Select at least one exercise</string>
+    <string name="session_completed">Routine completed!</string>
+    <string name="session_finished">Session finished. Great job!</string>
+
+    <!-- Headers -->
+    <string name="routine_prefix">Routine: %1$s</string>
+    <string name="exercise_prefix">Exercise: %1$s</string>
+    <string name="series_reps_fmt_full">Set %1$d/%2$d   •   %3$d reps</string>
+
+    <string name="detail_title">Routine details</string>
+
+    <!-- Samples -->
+    <string name="objetivo_fuerza_sample">Objective: Strength.</string>
+    <string name="musculos_sample">Muscle groups: Chest, Back, Leg, Core.</string>
+
+    <!-- If formatted by code -->
+    <string name="objective_prefix">Target: %1$s</string>
+    <string name="muscles_prefix">Muscle groups: %1$s</string>
+    <string name="detalledadad">Detail</string>
+
+    <!-- Menu + Upcoming -->
+    <string name="action_fav">Favorite</string>
+    <string name="action_edit">Edit</string>
+    <string name="upper_body_power">Upper Body Power</string>
+    <string name="legs_core">Legs &amp; Core</string>
+    <string name="hiit_express">HIIT Express</string>
+    <string name="legs_core_meta">Fri 7:00 AM · 35 min · Beginner</string>
+    <string name="hiit_express_meta">Sat 6:30 PM · 20 min · Advanced</string>
+
+    <string name="level_ex_count_fmt">%1$s · %2$d exercises</string>
+
+    <string name="group_chest">Chest</string>
+    <string name="group_back">Back</string>
+    <string name="group_shoulder">Shoulder</string>
+    <string name="group_leg">Leg</string>
+    <string name="group_arm">Arm</string>
+    <string name="group_core">Core</string>
+    <string name="level_beginner">Beginner</string>
+    <string name="level_intermediate">Intermediate</string>
+    <string name="level_advanced">Advanced</string>
+    <string name="group_level_meta_fmt">%1$s · %2$s</string>
+
+    <string-array name="selector_groups">
+        <item>@string/selector_all</item>
+        <item>@string/group_chest</item>
+        <item>@string/group_back</item>
+        <item>@string/group_shoulder</item>
+        <item>@string/group_leg</item>
+        <item>@string/group_arm</item>
+        <item>@string/group_core</item>
+    </string-array>
+    <string-array name="selector_levels">
+        <item>@string/selector_all</item>
+        <item>@string/level_beginner</item>
+        <item>@string/level_intermediate</item>
+        <item>@string/level_advanced</item>
+    </string-array>
+
+
+    <string name="flexiones_brazos">Push-ups</string>
+    <string name="peso_muerto_mancuernas">Dumbbell deadlift</string>
+    <string name="zancada">Lunge</string>
+    <string name="remo_mancuernas">Dumbbell row</string>
+    <string name="press_hombro_mancuernas">Dumbbell shoulder press</string>
+    <string name="curl_biceps">Biceps curl</string>
+    <string name="extension_triceps">Triceps extension</string>
+    <string name="crunch_abdominal">Crunch</string>
+    <string name="plancha_abdominal">Plank</string>
+
+    <string name="sentadillas_peso_corporal">Bodyweight squat</string>
+    <string name="series_reps_fmt_short">Sets × Reps: %1$d × %2$d</string>
+    <string name="rest_seconds_fmt">Rest: %1$d s</string>
+    <string name="exercises_label_short">exercises</string>
+    <string name="estadisticas">Statistics</string> <!-- si prefieres: "ex." -->
+
+    <string name="statistics_title">Statistics</string>
+    <string name="sessions_label">Sessions</string>
+    <string name="minutes_label">Minutes</string>
+    <string name="streak_label">Streak</string>
+
+    <plurals name="minutes_quantity">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="weeks_quantity">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+
+
+    <string name="session_in_progress">Session in progress</string>
+    <string name="cd_timer">Timer</string>
+    <string name="cd_prev">Previous</string>
+    <string name="cd_play_pause">Play / Pause</string>
+    <string name="cd_next">Next</string>
+
+    <string name="dialog_new_exercise_title">New exercise</string>
+    <string name="hint_new_exercise_name">Exercise name</string>
+    <string name="default_exercise_name">Exercise</string>
+    <string name="reminders_title">Reminders</string>
+
+    <string name="espalda">Back</string>
+    <string name="ep">Start Today</string>
+
+
+</resources>
